@@ -1,0 +1,14 @@
+{
+  "name": "slickboard",
+  "version": "1.0.0",
+  "description": "A desktop application resembling Openboard.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Shivam Arora",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^9.1.2"
+  }
+}

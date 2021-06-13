@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Openboard Clone</title>
+        <link rel="stylesheet" href="index.css"/>
+    </head>
+
+    <body>
+        <div class="tool_bar">
+            <div class="show_tool_options"></div>
+            <div class="tools">
+                <div class="tool" id="pencil">
+                    <img src="./icons/tools/Black_Pencil.svg" alt id="pencil" class="tool_img"/>
+                    <div class="tool_options" id="pencil_opt">
+                        <div class="size_container">  
+                            <input type="range" min="1" max="100" value="10" class="size_slider" id="pencil_size" onchange="changeSize(this)">
+                        </div>
+                        <div class="color_pallete">
+                            <div class="color_black"></div>
+                            <div class="color_red"></div>
+                            <div class="color_green"></div>
+                            <div class="color_blue"></div>
+                            <div class="color_yellow"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tool" id="eraser">
+                    <img src="./icons/tools/Eraser.svg" alt id="eraser" class="tool_img"/>
+                    <div class="tool_options" id="eraser_opt">
+                        <div class="size_container">
+                            <input type="range" min="1" max="100" value="50" class="size_slider" id="eraser_size" onchange="changeSize(this)">
+                        </div>
+                    </div>
+                </div>
+                <div class="tool" id="sticky_pad">
+                    <img src="./icons/tools/StickyNote.svg" alt id="sticky" class="tool_img"/>
+                    <div class="tool_options"></div>
+                </div>
+            </div>
+        </div>
+        <canvas class="board"></canvas>
+        <script src="draw.js"></script>
+        <script src="sticky.js"></script>
+    </body>
+</html>
